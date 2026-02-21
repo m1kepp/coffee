@@ -1,0 +1,32 @@
+/* button.css */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.button:hover {
+  background-color: rgb(from var(--accent-color) r g b / 90%);
+  transform: translateY(-1px);
+}
+
+.button:active { transform: translateY(0); }
+
+.button--ghost {
+  background: transparent;
+  color: var(--accent-color);
+}
+
+.button--ghost:hover {
+  background: var(--accent-soft);
+}

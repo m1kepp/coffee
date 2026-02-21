@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Акции — Такт-кофе</title>
+    <link rel="stylesheet" href="./css/pages/promotions.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="./index.html" aria-label="Такт-кофе">
+          <span class="header__logo-badge" aria-hidden="true">TAKT</span>
+          <span class="visually-hidden">Такт-кофе</span>
+        </a>
+
+        <button class="header__burger" type="button" aria-expanded="false" aria-controls="header-nav">
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="header__burger-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__nav" id="header-nav" aria-label="Основная навигация">
+          <ul class="header__menu">
+            <li class="header__menu-item"><a class="header__link" href="./menu.html">Меню</a></li>
+            <li class="header__menu-item"><a class="header__link header__link--active" href="./promotions.html">Акции</a></li>
+            <li class="header__menu-item"><a class="header__link" href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-top">
+        <div class="container">
+          <h1 class="page-title">Акции</h1>
+          <p class="page-lead">Листайте карусель — один слайд за раз, стрелки и индикаторы снизу. Переключение цикличное.</p>
+        </div>
+      </section>
+
+      <section class="promo-wrap">
+        <div class="container">
+          <div class="carousel" data-carousel aria-label="Карусель акций">
+            <div class="carousel__viewport">
+              <div class="carousel__track" data-carousel-track>
+                <div class="carousel__slide">
+                  <div class="carousel__media">
+                    <img src="./assets/images/promo-1.png" alt="Иллюстрация к акции «Утренний темп −20%»" />
+                  </div>
+                  <div class="carousel__body">
+                    <h3 class="carousel__title">Утренний темп −20%</h3>
+                    <p class="carousel__text">по будням 8:00–11:00 на эспрессо-бар.</p>
+                  </div>
+                </div>
+                <div class="carousel__slide">
+                  <div class="carousel__media">
+                    <img src="./assets/images/promo-2.png" alt="Иллюстрация к акции «2× бонусов»" />
+                  </div>
+                  <div class="carousel__body">
+                    <h3 class="carousel__title">2× бонусов</h3>
+                    <p class="carousel__text">на ягодные напитки весь день.</p>
+                  </div>
+                </div>
+                <div class="carousel__slide">
+                  <div class="carousel__media">
+                    <img src="./assets/images/promo-3.png" alt="Иллюстрация к акции «−10 ₽ со своим стаканом»" />
+                  </div>
+                  <div class="carousel__body">
+                    <h3 class="carousel__title">−10 ₽ со своим стаканом</h3>
+                    <p class="carousel__text">приносите термокружку и получите скидку.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel__btn carousel__btn--prev" type="button" data-carousel-prev>
+              <span class="visually-hidden">Назад</span>
+              ‹
+            </button>
+            <button class="carousel__btn carousel__btn--next" type="button" data-carousel-next>
+              <span class="visually-hidden">Вперёд</span>
+              ›
+            </button>
+
+            <div class="carousel__dots" data-carousel-dots aria-label="Индикаторы слайдов"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <p class="footer__heading">Адреса/часы</p>
+          <p class="footer__text">ул. Примерная, 12 (кофе с собой)<br />Ежедневно 08:00–21:00</p>
+        </div>
+
+        <nav class="footer__col footer__nav" aria-label="Быстрые ссылки">
+          <p class="footer__heading">Быстрые ссылки</p>
+          <ul>
+            <li><a class="footer__link" href="./menu.html">Меню</a></li>
+            <li><a class="footer__link" href="./promotions.html">Акции</a></li>
+            <li><a class="footer__link" href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <p class="footer__heading">Копирайт</p>
+          <p class="footer__text">© Такт-кофе, 2026</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
+  </body>
+</html>

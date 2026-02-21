@@ -1,0 +1,45 @@
+/* pages/contacts.css */
+@import url("../variables.css");
+@import url("../components/header.css");
+@import url("../components/footer.css");
+@import url("../components/button.css");
+@import url("../components/accordion.css");
+
+.page-top { padding: 48px 0 18px; }
+.page-title { font-size: var(--h1); line-height: 1.05; }
+.page-lead { color: var(--color-muted); margin-top: 10px; max-width: 70ch; }
+
+.contacts-grid {
+  display: grid;
+  gap: var(--gap-4);
+  padding: 28px 0 56px;
+}
+
+.contacts-card { padding: 16px; }
+
+.contacts__map {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
+.contacts-list {
+  display: grid;
+  gap: 12px;
+  color: var(--color-muted);
+}
+
+.contacts-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+@media (min-width: 704px) {
+  .contacts-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}

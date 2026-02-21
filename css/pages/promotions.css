@@ -1,0 +1,12 @@
+/* pages/promotions.css */
+@import url("../variables.css");
+@import url("../components/header.css");
+@import url("../components/footer.css");
+@import url("../components/button.css");
+@import url("../components/carousel.css");
+
+.page-top { padding: 48px 0 18px; }
+.page-title { font-size: var(--h1); line-height: 1.05; }
+.page-lead { color: var(--color-muted); margin-top: 10px; max-width: 70ch; }
+
+.promo-wrap { padding: 28px 0 56px; }

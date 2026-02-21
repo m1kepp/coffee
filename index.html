@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Такт-кофе</title>
+    <link rel="stylesheet" href="./css/pages/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="./index.html" aria-label="Такт-кофе">
+          <span class="header__logo-badge" aria-hidden="true">TAKT</span>
+          <span class="visually-hidden">Такт-кофе</span>
+        </a>
+
+        <button class="header__burger" type="button" aria-expanded="false" aria-controls="header-nav">
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="header__burger-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__nav" id="header-nav" aria-label="Основная навигация">
+          <ul class="header__menu">
+            <li class="header__menu-item"><a class="header__link" href="./menu.html">Меню</a></li>
+            <li class="header__menu-item"><a class="header__link" href="./promotions.html">Акции</a></li>
+            <li class="header__menu-item"><a class="header__link" href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div>
+            <h1 class="hero__title">Кофе, который попадает в такт вашему дню</h1>
+            <p class="hero__lead">
+              Эспрессо-бар, фильтр и авторские напитки. Свежая обжарка, понятное меню и уютное место для работы.
+            </p>
+            <div class="hero__cta">
+              <a class="button" href="./menu.html">Выбрать напиток</a>
+              <a class="button button--ghost" href="./contacts.html">Как нас найти</a>
+            </div>
+          </div>
+
+          <div class="hero__card card-surface">
+            <img src="./assets/images/hero-illustration.png" alt="Схема и инструменты для приготовления кофе" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Почему «Такт-кофе»</h2>
+          <div class="features">
+            <article class="feature">
+              <h3 class="feature__title">Быстро</h3>
+              <p class="feature__text">Готовим эспрессо и фильтр без очередей: вы забираете напиток — и в ритм дня.</p>
+            </article>
+            <article class="feature">
+              <h3 class="feature__title">Честно</h3>
+              <p class="feature__text">Понятные вкусы, честные описания и цены — без сюрпризов.</p>
+            </article>
+            <article class="feature">
+              <h3 class="feature__title">Уютно</h3>
+              <p class="feature__text">Рабочие места, розетки и спокойная музыка — можно зависнуть надолго.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Хиты недели</h2>
+
+          <ul class="hits" aria-label="Популярные напитки">
+            <li class="hits__item">
+              <a class="hits__link" href="./menu.html#espresso">
+                <article class="hits-card">
+                  <div class="hits-card__media">
+                    <img class="hits-card__img" src="./assets/images/cappuccino.png" alt="Капучино" />
+                  </div>
+                  <h3 class="hits-card__title">Капучино</h3>
+                  <p class="hits-card__meta">250 мл • 260 ₽</p>
+                </article>
+              </a>
+            </li>
+
+            <li class="hits__item">
+              <a class="hits__link" href="./menu.html#signature">
+                <article class="hits-card">
+                  <div class="hits-card__media">
+                    <img class="hits-card__img" src="./assets/images/flat-white.png" alt="Флэт уайт" />
+                  </div>
+                  <h3 class="hits-card__title">Флэт уайт</h3>
+                  <p class="hits-card__meta">200 мл • 280 ₽</p>
+                </article>
+              </a>
+            </li>
+
+            <li class="hits__item">
+              <a class="hits__link" href="./menu.html#filter">
+                <article class="hits-card">
+                  <div class="hits-card__media">
+                    <img class="hits-card__img" src="./assets/images/filter.png" alt="Фильтр-кофе" />
+                  </div>
+                  <h3 class="hits-card__title">Фильтр</h3>
+                  <p class="hits-card__meta">300 мл • 240 ₽</p>
+                </article>
+              </a>
+            </li>
+
+            <li class="hits__item">
+              <a class="hits__link" href="./menu.html#espresso">
+                <article class="hits-card">
+                  <div class="hits-card__media">
+                    <img class="hits-card__img" src="./assets/images/americano.png" alt="Американо" />
+                  </div>
+                  <h3 class="hits-card__title">Американо</h3>
+                  <p class="hits-card__meta">250 мл • 220 ₽</p>
+                </article>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container about">
+          <div class="about__text">
+            <h2 class="section__title">О нас</h2>
+            <p class="about__lead">
+              Мы готовим кофе по-честному: правильная экстракция, стабильный вкус и понятные рецепты.
+              Заходите на быстрый эспрессо, работайте за столиком или берите напиток с собой.
+            </p>
+          </div>
+          <div class="about__media card-surface">
+            <img src="./assets/images/about-illustration.png" alt="Схема кофейного оборудования" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Ответы на вопросы</h2>
+
+          <div class="accordion" aria-label="Частые вопросы">
+            <div class="accordion__item">
+              <button class="accordion__button" type="button"
+                aria-expanded="false" aria-controls="acc-panel-0" id="acc-btn-0">
+                Есть ли безлактозное молоко?
+              </button>
+              <div class="accordion__panel" id="acc-panel-0" role="region" aria-labelledby="acc-btn-0" hidden>
+                <div class="accordion__content">
+                  <p>Да, есть безлактозное и растительное (овсяное). Можно выбрать при заказе.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <button class="accordion__button" type="button"
+                aria-expanded="false" aria-controls="acc-panel-1" id="acc-btn-1">
+                Можно ли взять кофе с собой?
+              </button>
+              <div class="accordion__panel" id="acc-panel-1" role="region" aria-labelledby="acc-btn-1" hidden>
+                <div class="accordion__content">
+                  <p>Конечно. Все напитки доступны to go, а ещё у нас есть скидка с вашим стаканом.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <button class="accordion__button" type="button"
+                aria-expanded="false" aria-controls="acc-panel-2" id="acc-btn-2">
+                Есть ли Wi‑Fi?
+              </button>
+              <div class="accordion__panel" id="acc-panel-2" role="region" aria-labelledby="acc-btn-2" hidden>
+                <div class="accordion__content">
+                  <p>Да. Пароль можно уточнить у бариста — он всегда на стойке.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <p class="footer__heading">Адреса/часы</p>
+          <p class="footer__text">ул. Примерная, 12 (кофе с собой)<br />Ежедневно 08:00–21:00</p>
+        </div>
+
+        <nav class="footer__col footer__nav" aria-label="Быстрые ссылки">
+          <p class="footer__heading">Быстрые ссылки</p>
+          <ul>
+            <li><a class="footer__link" href="./menu.html">Меню</a></li>
+            <li><a class="footer__link" href="./promotions.html">Акции</a></li>
+            <li><a class="footer__link" href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <p class="footer__heading">Копирайт</p>
+          <p class="footer__text">© Такт-кофе, 2026</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/header.js" defer></script>
+    <script src="./js/accordion.js" defer></script>
+  </body>
+</html>

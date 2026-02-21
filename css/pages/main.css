@@ -1,0 +1,152 @@
+/* pages/main.css */
+@import url("../variables.css");
+@import url("../components/header.css");
+@import url("../components/footer.css");
+@import url("../components/button.css");
+@import url("../components/accordion.css");
+
+.hero {
+  padding: 56px 0 40px;
+}
+
+.hero__grid {
+  display: grid;
+  gap: var(--gap-4);
+}
+
+.hero__title {
+  font-size: var(--h1);
+  line-height: 1.05;
+  font-weight: 900;
+}
+
+.hero__lead {
+  color: var(--color-muted);
+  max-width: 62ch;
+  margin-top: 12px;
+}
+
+.hero__cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: var(--gap-4);
+}
+
+.hero__card {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.hero__card img {
+  width: 100%;
+  height: auto;
+}
+
+.features {
+  display: grid;
+  gap: var(--gap-3);
+}
+
+.feature {
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  background: #fff;
+}
+
+.feature__title {
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.feature__text {
+  color: var(--color-muted);
+}
+
+.hits {
+  display: grid;
+  gap: var(--gap-3);
+}
+
+.hits__link {
+  text-decoration: none;
+  display: block;
+}
+
+.hits-card {
+  border: 1px solid var(--border-color);
+  background: #fff;
+  overflow: hidden;
+}
+
+.hits-card__media {
+  background: #ffffff;
+  padding: 12px;
+  min-height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hits-card__img {
+  max-height: 170px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.hits-card__title {
+  padding: 12px 12px 0;
+  font-weight: 800;
+}
+
+.hits-card__meta {
+  padding: 6px 12px 12px;
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.hits__link:hover .hits-card {
+  background: var(--accent-soft);
+}
+
+.about {
+  display: grid;
+  gap: var(--gap-4);
+  align-items: start;
+}
+
+.about__lead {
+  color: var(--color-muted);
+  max-width: 65ch;
+}
+
+.about__media {
+  padding: 12px;
+}
+
+@media (min-width: 704px) {
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about {
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hits {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

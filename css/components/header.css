@@ -1,0 +1,135 @@
+/* header.css */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--color-bg);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  gap: var(--gap-3);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header__logo-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.header__burger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+  background: transparent;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.header__burger-lines,
+.header__burger-lines::before,
+.header__burger-lines::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+}
+
+.header__burger-lines { position: relative; }
+.header__burger-lines::before,
+.header__burger-lines::after { position: absolute; left: 0; }
+.header__burger-lines::before { top: -6px; }
+.header__burger-lines::after { top: 6px; }
+
+.header__nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 64px;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--accent-color);
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.header__nav--open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  padding: 12px var(--container-pad) 16px;
+  gap: 8px;
+}
+
+.header__link {
+  display: inline-flex;
+  padding: 10px 12px;
+  border-radius: 0;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  background: transparent;
+}
+
+.header__link:hover { background: var(--accent-soft); }
+
+.header__link--active {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* Tablet+ */
+@media (min-width: 704px) {
+  .header__burger { display: none; }
+
+  .header__nav {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    background: transparent;
+    border: 0;
+  }
+
+  .header__menu {
+    flex-direction: row;
+    padding: 0;
+    gap: 0;
+  }
+
+  .header__menu-item + .header__menu-item .header__link {
+    border-left: 0; /* чтобы было похоже на "таб" */
+  }
+}

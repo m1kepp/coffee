@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меню — Такт-кофе</title>
+    <link rel="stylesheet" href="./css/pages/menu.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="./index.html" aria-label="Такт-кофе">
+          <span class="header__logo-badge" aria-hidden="true">TAKT</span>
+          <span class="visually-hidden">Такт-кофе</span>
+        </a>
+
+        <button class="header__burger" type="button" aria-expanded="false" aria-controls="header-nav">
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="header__burger-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__nav" id="header-nav" aria-label="Основная навигация">
+          <ul class="header__menu">
+            <li class="header__menu-item"><a class="header__link header__link--active" href="./menu.html">Меню</a></li>
+            <li class="header__menu-item"><a class="header__link" href="./promotions.html">Акции</a></li>
+            <li class="header__menu-item"><a class="header__link" href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="menu-page__top">
+        <div class="container">
+          <h1 class="menu-page__title">Меню</h1>
+          <nav class="menu-categories" aria-label="Категории меню">
+            <ul class="menu-categories__list">
+              <li><a href="#espresso">Эспрессо-бар</a></li>
+              <li><a href="#filter">Фильтр</a></li>
+              <li><a href="#signature">Авторские</a></li>
+              <li><a href="#cold">Холодные</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="menu-section" id="espresso">
+        <div class="container">
+          <h2 class="section__title">Эспрессо-бар</h2>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/espresso.png" alt="Эспрессо" />
+              </div>
+              <h3 class="menu-card__title">Эспрессо</h3>
+              <div class="menu-card__meta"><span>30 мл</span><span>•</span><span>150 ₽</span></div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/americano.png" alt="Американо" />
+              </div>
+              <h3 class="menu-card__title">Американо</h3>
+              <div class="menu-card__meta"><span>S 200 мл</span><span>•</span><span>M 300 мл</span><span>•</span><span>L 400 мл</span></div>
+              <div class="menu-card__meta"><span>S 230 ₽</span><span>•</span><span>M 260 ₽</span><span>•</span><span>L 290 ₽</span></div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/cappuccino.png" alt="Капучино" />
+              </div>
+              <h3 class="menu-card__title">Капучино</h3>
+              <div class="menu-card__meta"><span>S 200 мл</span><span>•</span><span>M 300 мл</span><span>•</span><span>L 400 мл</span></div>
+              <div class="menu-card__meta"><span>S 230 ₽</span><span>•</span><span>M 260 ₽</span><span>•</span><span>L 290 ₽</span></div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/flat-white.png" alt="Флэт уайт" />
+              </div>
+              <h3 class="menu-card__title">Флэт уайт</h3>
+              <div class="menu-card__meta"><span>250 мл</span><span>•</span><span>250 ₽</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="filter">
+        <div class="container">
+          <h2 class="section__title">Фильтр</h2>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/filter.png" alt="Фильтр-кофе" />
+              </div>
+              <h3 class="menu-card__title">Фильтр‑кофе</h3>
+              <div class="menu-card__meta"><span>300 мл</span><span>•</span><span>220 ₽</span></div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/v60.png" alt="V60" />
+              </div>
+              <h3 class="menu-card__title">V60</h3>
+              <div class="menu-card__meta"><span>300 мл</span><span>•</span><span>260 ₽</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="signature">
+        <div class="container">
+          <h2 class="section__title">Авторские</h2>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/espresso-tonic.png" alt="Эспрессо-тоник" />
+              </div>
+              <h3 class="menu-card__title">Эспрессо‑тоник</h3>
+              <div class="menu-card__meta"><span>300 мл</span><span>•</span><span>290 ₽</span></div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/raf-vanilla.png" alt="Раф ваниль" />
+              </div>
+              <h3 class="menu-card__title">Раф ваниль</h3>
+              <div class="menu-card__meta"><span>300 мл</span><span>•</span><span>320 ₽</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="cold">
+        <div class="container">
+          <h2 class="section__title">Холодные</h2>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/coldbrew-cherry.png" alt="Колдбрю «Вишня»" />
+              </div>
+              <h3 class="menu-card__title">Колдбрю «Вишня»</h3>
+              <div class="menu-card__meta"><span>250 мл</span><span>•</span><span>330 ₽</span></div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__media">
+                <img class="menu-card__img" src="./assets/images/matcha-latte.png" alt="Матча латте" />
+              </div>
+              <h3 class="menu-card__title">Матча латте</h3>
+              <div class="menu-card__meta"><span>300 мл</span><span>•</span><span>310 ₽</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <p class="footer__heading">Адреса/часы</p>
+          <p class="footer__text">ул. Примерная, 12 (кофе с собой)<br />Ежедневно 08:00–21:00</p>
+        </div>
+
+        <nav class="footer__col footer__nav" aria-label="Быстрые ссылки">
+          <p class="footer__heading">Быстрые ссылки</p>
+          <ul>
+            <li><a class="footer__link" href="./menu.html">Меню</a></li>
+            <li><a class="footer__link" href="./promotions.html">Акции</a></li>
+            <li><a class="footer__link" href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <p class="footer__heading">Копирайт</p>
+          <p class="footer__text">© Такт-кофе, 2026</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/header.js" defer></script>
+  </body>
+</html>
